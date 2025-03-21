@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import css from './capstone.css';
-import css from './styles.css'
+import './capstone.css';
+import './styles.css';
 
 export default function accountbalance() {
     return (
