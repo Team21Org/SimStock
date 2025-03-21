@@ -1,5 +1,8 @@
 import Image from "next/image";
-import Head from "next/Head";
+import Head from "next/head";
+import "./capstone.css";
+import "./styles.css";
+
 
 export default function Home() {
   return (
