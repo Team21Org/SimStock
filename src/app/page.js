@@ -1,6 +1,6 @@
 import Image from "src/app/LOGOv1.png";
 import Head from "next/head";
-import
+
 export default function Home() {
   return (
 	  <><Head>
