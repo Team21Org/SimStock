@@ -1,14 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-export default function ViewMarket() {
+export default function TransactionHistory() {
     return (
         <>
             <Head>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-                <title>Stock Sim | Market</title>
+                <title>Stock Sim | Transaction History</title>
                 <link rel="stylesheet" type="text/css" href="capstone.css" />
             </Head>
 
@@ -40,27 +40,25 @@ export default function ViewMarket() {
                         </div>
                     </div>
                 </Header>
-                <h3>Market</h3>
-                {/* <!-- check if Market is open before displaying. Pull current time from the disclosed time within the database--> */}
-                <table hidden>
+                <h3>Transaction History</h3>
+                <table>
                     <thead>
                         <tr>
-                            <th>Stock Name</th>
+                            <th>Transaction Type</th>
+                            <th>Amount</th>
                             <th>Ticker Number</th>
-                            <th>Volume</th>
-                            <th>Sale Price</th>
-                            <th>Daily High</th>
-                            <th>Daily Low</th>
-                            <th>Opening Price</th>
-                            <th>#placeholder</th>
-                            {/* <!-- <th><input type="submit" value="Buy"></th> --> */}
+                            <th>Quantity</th>
+                            <th>Transaction Date</th>
                         </tr>
                     </thead>
                     <tbody>
                         {/* <!-- The table needs to be populated from the database, such as with JavaScript --> */}
                     </tbody>
                 </table>
-                <p> Market is closed until (insert time here). </p>
+                <p>Balance as of {/* <!-- script for pulling the date --> */}</p>
+                <div>
+                    <a class="btn" href="balance.html">Access Balance</a>
+                </div>
             </body>
         </>
     );

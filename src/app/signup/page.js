@@ -1,15 +1,16 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-export default function ViewMarket() {
+export default function SignUp() {
     return (
         <>
             <Head>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-                <title>Stock Sim | Market</title>
+                <title>Stock Sim | Sign-Up</title>
                 <link rel="stylesheet" type="text/css" href="capstone.css" />
+                <script type="text/javascript" src="capstone.js" defer></script>
             </Head>
 
             <body>
@@ -22,6 +23,7 @@ export default function ViewMarket() {
                         <a class="login" href="login.html">Log In</a>
                         <a href="viewschedule.html">View Schedule</a>
                         <a href="viewmarket.html">View Market</a>
+
                         <div class="dropdown">
                             <button class="dropbtn">Account</button>
                             <div class="dropdown-content">
@@ -40,27 +42,20 @@ export default function ViewMarket() {
                         </div>
                     </div>
                 </Header>
-                <h3>Market</h3>
-                {/* <!-- check if Market is open before displaying. Pull current time from the disclosed time within the database--> */}
-                <table hidden>
-                    <thead>
-                        <tr>
-                            <th>Stock Name</th>
-                            <th>Ticker Number</th>
-                            <th>Volume</th>
-                            <th>Sale Price</th>
-                            <th>Daily High</th>
-                            <th>Daily Low</th>
-                            <th>Opening Price</th>
-                            <th>#placeholder</th>
-                            {/* <!-- <th><input type="submit" value="Buy"></th> --> */}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* <!-- The table needs to be populated from the database, such as with JavaScript --> */}
-                    </tbody>
-                </table>
-                <p> Market is closed until (insert time here). </p>
+                <h3>Sign-Up</h3>
+                <form id="loginform">
+                    <label for="email">Enter Your E-Mail Address</label><br />
+                    <input type="text" id="email" name="email" /><br />
+                    <label for="username">Create A Username (Must Be Unique):</label><br />
+                    <input type="text" id="username" name="username" /><br />
+                    <label for="pwd">Create A Password:</label><br />
+                    <input type="password" id="pwd" name="pwd" /><br />
+                    <label for="repwd">Re-Enter Password:</label><br />
+                    <input type="password" id="repwd" name="repwd" /><br /><br />
+                    <input class="btn" type="submit" value="Submit" />
+                </form>
+
+                {/* <!-- this needs to have JavaScript code to verify login information with the database, and then to redirect to likely profile.html --> */}
             </body>
         </>
     );
