@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import "./capstone.css";
 import "./styles.css";
 
@@ -12,28 +13,28 @@ export default function Index() {
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <title>Stock Sim | Home Page</title>
     </Head>
-    <body>
-        <body>
-          <a href="index.html"> <img class="banner" src="LOGOv1.png" /></a>
+    <div>
+        <div>
+          <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={160} height={110} /> </Link>
           <h1>Stock Trading System Simulator</h1>
           <h2>By Team 21</h2>
           <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
-          <div class="navbar">
-            <a class="login" href="login.html">Log In</a>
+          <div className="navbar">
+          <Link className="login" href="/login">Log In</Link>
             <a href="viewschedule.html">View Schedule</a>
             <a href="viewmarket.html">View Market</a>
-            <div class="dropdown">
-              <button class="dropbtn">Account</button>
-              <div class="dropdown-content">
+            <div className="dropdown">
+              <button className="dropbtn">Account</button>
+              <div className="dropdown-content">
                 <a href="profile.html">Profile</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="transhistory.html">Transaction History</a>
               </div>
             </div>
-            <div class="dropdown">
+            <div className="dropdown">
               {/*!-- check if user is administrator to reveal Hidden attributes --*/}
-              <button hidden class="dropbtn">Edit</button>
-              <div class="dropdown-content">
+              <button hidden className="dropbtn">Edit</button>
+              <div className="dropdown-content">
                 <a href="editmarket.html">Edit Market</a>
                 <a href="editschedule.html">Edit Schedule</a>
               </div>
@@ -58,8 +59,8 @@ export default function Index() {
           <a href="signup.html"> <h4 id="h4alt2"> Sign Up For Free!</h4></a>
           <img id="homeimg3" src="stockicon.png" />
           <a href="viewmarket.html"> <h4 id="h4alt2"> View Our Current Market</h4></a>
-        </body>
-	</body>
+        </div>
+	</div>
 		</>
   );
 }

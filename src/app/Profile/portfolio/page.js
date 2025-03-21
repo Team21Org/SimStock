@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import './capstone.css';
+import './styles.css';
 
 export default function Portfolio() {
     return (
