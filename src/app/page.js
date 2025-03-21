@@ -1,5 +1,5 @@
-import Image from "src/app/LOGOv1.png";
-import Head from "next/head";
+import Image from "next/image";
+import Head from "next/Head";
 
 export default function Home() {
   return (

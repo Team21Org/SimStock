@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Head from "next/head";
+import css from './capstone.css';
+import css from './styles.css';
 
 export default function Login() {
     return (
@@ -14,7 +16,7 @@ export default function Login() {
             </Head>
 
 
-	<header>
+	<Header>
 		<a href="index.html"> <img class="banner" src="LOGOv1.png" /> </a>		
 		<h1>Stock Trading System Simulator</h1>
 		<h2>By Team 21</h2>
@@ -42,7 +44,7 @@ export default function Login() {
 			</div> 				
 		</div>
 		
-	</header>
+	</Header>
 	<h3>Login</h3>
 
 	<form id="loginform">
