@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Head from "next/head";
-import css from './capstone.css';
-import css from './styles.css';
+import './capstone.css';
+import './styles.css';
 
 export default function Login() {
     return (
