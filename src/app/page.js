@@ -28,7 +28,7 @@ export default function Home() {
               </div>
             </div>
             <div class="dropdown">
-              /*!-- check if user is administrator to reveal Hidden attributes --*/
+              {/*!-- check if user is administrator to reveal Hidden attributes --*/}
               <button hidden class="dropbtn">Edit</button>
               <div class="dropdown-content">
                 <a href="editmarket.html">Edit Market</a>
