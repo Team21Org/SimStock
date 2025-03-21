@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import "./capstone.css";
 import "./styles.css";
 
@@ -14,12 +15,12 @@ export default function Index() {
     </Head>
     <div>
         <div>
-          <a href="index.html"> <img className="banner" src="LOGOv1.png" /></a>
+          <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={160} height={110} /> </Link>
           <h1>Stock Trading System Simulator</h1>
           <h2>By Team 21</h2>
           <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
           <div className="navbar">
-            <a className="login" href="login.html">Log In</a>
+          <Link className="login" href="/login">Log In</Link>
             <a href="viewschedule.html">View Schedule</a>
             <a href="viewmarket.html">View Market</a>
             <div className="dropdown">
