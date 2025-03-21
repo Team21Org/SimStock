@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Head from "next/head";
+<<<<<<< HEAD
 import './capstone.css';
 import './styles.css';
+=======
+import "./capstone.css";
+import "./styles.css";
+
+>>>>>>> 08f92c9fc2e0ce4a70458ab36daf820163657aac
 
 export default function Index() {
   return (
