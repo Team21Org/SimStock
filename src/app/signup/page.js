@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from "next/link";
 import './capstone.css';
 import './styles.css';
 
@@ -16,9 +17,9 @@ export default function SignUp() {
             </Head>
 
             <body>
-                <Header>
-                    <a href="index.html"> <img class="banner" src="LOGOv1.png" /> </a>
-                    <h1>Stock Trading System Simulator</h1>
+                <div>
+                <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={160} height={110} /> </Link>
+                <h1>Stock Trading System Simulator</h1>
                     <h2>By Team 21</h2>
                     <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
                     <div class="navbar">
@@ -43,7 +44,7 @@ export default function SignUp() {
                             </div>
                         </div>
                     </div>
-                </Header>
+                </div>
                 <h3>Sign-Up</h3>
                 <form id="loginform">
                     <label for="email">Enter Your E-Mail Address</label><br />

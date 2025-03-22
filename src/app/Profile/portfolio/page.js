@@ -15,28 +15,28 @@ export default function Portfolio() {
                 <link rel="stylesheet" type="text/css" href="capstone.css" />
             </Head>
 
-            <body>
+            <div>
                 <div>
                     <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={160} height={110} /> </Link>
                     <h1>Stock Trading System Simulator</h1>
                     <h2>By Team 21</h2>
                     <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
-                    <div class="navbar">
-                        <a class="login" href="login.html">Log In</a>
-                        <a href="viewschedule.html">View Schedule</a>
-                        <a href="viewmarket.html">View Market</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Account</button>
-                            <div class="dropdown-content">
-                                <a href="profile.html">Profile</a>
-                                <a href="portfolio.html">Portfolio</a>
-                                <a href="transhistory.html">Transaction History</a>
+                    <div className="navbar">
+                        <Link className="login" href="/login">Log In</Link>
+                        <Link href="/viewschedule">View Schedule</Link>
+                        <Link href="./market">View Market</Link>    
+                        <div className="dropdown">
+                            <button className="dropbtn">Account</button>
+                            <div className="dropdown-content">
+                                <Link href="/Profile">Profile</Link>
+                                <Link href="/Profile/portfolio">Portfolio</Link>
+                                <Link href="/Profile/portfolio/transaction-history">Transaction History</Link>
                             </div>
                         </div>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             {/* <!-- check if user is administrator to reveal Hidden attributes --> */}
-                            <button hidden class="dropbtn">Edit</button>
-                            <div class="dropdown-content">
+                            <button hidden className="dropbtn">Edit</button>
+                            <div className="dropdown-content">
                                 <a href="editmarket.html">Edit Market</a>
                                 <a href="editschedule.html">Edit Schedule</a>
                             </div>
@@ -63,7 +63,7 @@ export default function Portfolio() {
                 </table>
                 <p>Account Balance</p>
                 {/* <!-- Pull user account balance --> */}
-            </body>
+            </div>
         </>
     );
 }
