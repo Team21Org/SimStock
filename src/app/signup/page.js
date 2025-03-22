@@ -16,7 +16,7 @@ export default function SignUp() {
                 <script type="text/javascript" src="capstone.js" defer></script>
             </Head>
 
-            <body>
+            <div>
                 <div>
                 <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={160} height={110} /> </Link>
                 <h1>Stock Trading System Simulator</h1>
@@ -59,7 +59,7 @@ export default function SignUp() {
                 </form>
 
                 {/* <!-- this needs to have JavaScript code to verify login information with the database, and then to redirect to likely profile.html --> */}
-            </body>
+            </div>
         </>
     );
 }

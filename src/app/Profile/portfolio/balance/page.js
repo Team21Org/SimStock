@@ -48,9 +48,9 @@ export default function accountbalance() {
                     <p>What would you like to do?</p>
                     <form>
                         <input type="radio" id="withdraw" name="balance" value="withdraw"/>
-                        <label for="withdraw">Withdraw</label><br />
+                        <label htmlFor="withdraw">Withdraw</label><br />
                         <input type="radio" id="deposit" name="balance" value="deposit" />
-                        <label for="deposit">Deposit</label><br />
+                        <label htmlFor="deposit">Deposit</label><br />
                     </form>
                     <p>Amount: </p>
                         <form>
