@@ -22,16 +22,16 @@ export default function Login() {
 		<h2>By Team 21</h2>
 		<h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
 		<div className="navbar">
-			<a className="login" href="login.html">Log In</a>	
-			<a href="viewschedule.html">View Schedule</a>
-			<a href="viewmarket.html">View Market</a>
+			<Link className="login" href="/login">Log In</Link>
+        	<Link href="/viewschedule">View Schedule</Link>
+        	<Link href="Profile/market">View Market</Link>           
 			
 			<div className="dropdown">	
 				<button className="dropbtn">Account</button>
 				<div className="dropdown-content">
-					<a href="profile.html">Profile</a>
-					<a href="portfolio.html">Portfolio</a>
-					<a href="transhistory.html">Transaction History</a>
+				<Link href="/Profile">Profile</Link>
+                <Link href="/Profile/portfolio">Portfolio</Link>
+                <Link href="/Profile/portfolio/transaction-history">Transaction History</Link>
 				</div>
 			</div>	
 			<div className="dropdown">	
@@ -48,9 +48,9 @@ export default function Login() {
 	<h3>Login</h3>
 
 	<form id="loginform">
-		<label for="username">Username:</label><br />
+		<label htmlFor="username">Username:</label><br />
 		<input type="text" id="username" name="username" /><br />
-		<label for="pwd">Password:</label><br />
+		<label htmlFor="pwd">Password:</label><br />
 		<input type="password" id="pwd" name="pwd" /><br /><br />
 		<input className="btn" type="submit" value="Submit" /><br /><br />
 		<a id="accbtn" href="signup.html"> No Account? Make One Here! </a>
