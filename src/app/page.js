@@ -20,7 +20,7 @@ export default function Index() {
           <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
           <div className="navbar">
               <Link className="login" href="/login">Log In</Link>
-              <Link href="/viewschedule">View Schedule</Link>
+              <Link href="/Profile/schedule">View Schedule</Link>
               <Link href="Profile/market">View Market</Link>            
           <div className="dropdown">
               <button className="dropbtn">Account</button>

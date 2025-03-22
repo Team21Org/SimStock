@@ -23,7 +23,7 @@ export default function Profile() {
                                     <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
                                     <div className="navbar">
                                         <Link className="login" href="/login">Log In</Link>
-                                        <Link href="/viewschedule">View Schedule</Link>
+                                        <Link href="Profile/schedule">View Schedule</Link>
                                         <Link href="Profile/market">View Market</Link>    
 
                                         <div className="dropdown">

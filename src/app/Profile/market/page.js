@@ -23,8 +23,8 @@ export default function ViewMarket() {
                     <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
                     <div className="navbar">
                         <Link className="login" href="/login">Log In</Link>
-                        <Link href="/viewschedule">View Schedule</Link>
-                        <Link href="Profile/market">View Market</Link>   
+                        <Link href="./schedule">View Schedule</Link>
+                        <Link href="./market">View Market</Link>   
                         <div className="dropdown">
                             <button className="dropbtn">Account</button>
                             <div className="dropdown-content">
