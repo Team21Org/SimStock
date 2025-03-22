@@ -53,7 +53,7 @@ export default function Login() {
 		<label htmlFor="pwd">Password:</label><br />
 		<input type="password" id="pwd" name="pwd" /><br /><br />
 		<input className="btn" type="submit" value="Submit" /><br /><br />
-		<a id="accbtn" href="signup.html"> No Account? Make One Here! </a>
+		<Link id="accbtn" href="/signup"> No Account? Make One Here! </Link>
 	</form> 
 	{/* <!-- this needs to have JavaScript code to verify login information with the database, and then to redirect to likely profile.html --> */}
     </div>

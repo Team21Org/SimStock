@@ -14,19 +14,19 @@ export default function Index() {
     </Head>
     <div>
         <div>
-          <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={160} height={110} /> </Link>
+          <Link href="/"> <Image className="banner" src="/LOGOv1.png" alt="Logo" width={150} height={0} /> </Link>
           <h1>Stock Trading System Simulator</h1>
           <h2>By Team 21</h2>
           <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
           <div className="navbar">
-          <Link className="login" href="/login">Log In</Link>
-          <Link href="/viewschedule">View Schedule</Link>
-          <Link href="Profile/market">View Market</Link>            
+              <Link className="login" href="/login">Log In</Link>
+              <Link href="/Profile/schedule">View Schedule</Link>
+              <Link href="Profile/market">View Market</Link>            
           <div className="dropdown">
               <button className="dropbtn">Account</button>
               <div className="dropdown-content">
-                <Link href="/Profile">Profile</Link>
-                <Link href="/Profile/portfolio">Portfolio</Link>
+                  <Link href="/Profile">Profile</Link>
+                  <Link href="/Profile/portfolio">Portfolio</Link>
                 <Link href="/Profile/portfolio/transaction-history">Transaction History</Link>
               </div>
             </div>
