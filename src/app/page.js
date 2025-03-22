@@ -4,7 +4,6 @@ import Link from "next/link";
 import "./capstone.css";
 import "./styles.css";
 
-
 export default function Index() {
   return (
 	  <><Head>
@@ -21,22 +20,22 @@ export default function Index() {
           <h2>Sam Kline, Michael Lacey, Josien Lajoie</h2>
           <div className="navbar">
           <Link className="login" href="/login">Log In</Link>
-            <a href="viewschedule.html">View Schedule</a>
-            <a href="viewmarket.html">View Market</a>
-            <div className="dropdown">
+          <Link href="/viewschedule">View Schedule</Link>
+          <Link href="Profile/market">View Market</Link>            
+          <div className="dropdown">
               <button className="dropbtn">Account</button>
               <div className="dropdown-content">
-                <a href="profile.html">Profile</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="transhistory.html">Transaction History</a>
+                <Link href="/Profile">Profile</Link>
+                <Link href="/Profile/portfolio">Portfolio</Link>
+                <Link href="/Profile/portfolio/transaction-history">Transaction History</Link>
               </div>
             </div>
             <div className="dropdown">
               {/*!-- check if user is administrator to reveal Hidden attributes --*/}
               <button hidden className="dropbtn">Edit</button>
               <div className="dropdown-content">
-                <a href="editmarket.html">Edit Market</a>
-                <a href="editschedule.html">Edit Schedule</a>
+              {/* <Link href="/editmarket">Edit Market</Link> */}
+              {/* <Link href="/editschedule">Edit Schedule</Link> */}
               </div>
             </div>
           </div>
@@ -56,9 +55,9 @@ export default function Index() {
 
           <h4 id="h4alt1">Ready To Start? </h4>
           <img id="homeimg2" src="profileicon.png" />
-          <a href="signup.html"> <h4 id="h4alt2"> Sign Up For Free!</h4></a>
+          <Link href="/signup"> <h4 id="h4alt2"> Sign Up For Free!</h4></Link>
           <img id="homeimg3" src="stockicon.png" />
-          <a href="viewmarket.html"> <h4 id="h4alt2"> View Our Current Market</h4></a>
+          <Link href="/Profile/market"> <h4 id="h4alt2"> View Our Current Market</h4></Link>
         </div>
 	</div>
 		</>

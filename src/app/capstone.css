@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela&display=swap');
 
-
 /*<<<<<<<<< GENERAL STYLES >>>>>>>>>>>>>/*
 
 /* HTML Styles */
@@ -22,13 +21,15 @@ p {
 h1 {
 	text-align: right;
 	float: right;
+	margin-right: 10px;
 }
 
 /* Team Name and Member Names */
 h2 {
 	text-align: right;
 	font-size: 20px;
-	margin-top: -20px
+	margin-top: -20px;
+	margin-right: 10px;
 }
 
 /* Page Name on Nav Bar (try not to mess with)*/
@@ -38,7 +39,7 @@ h3 {
 	margin-top: -2px;
 	padding: 12px;
 	margin-right: -12px;
-	margin-left: -12px;
+	margin-left: -8px;
 }
 
 /* Image Styles */ 
